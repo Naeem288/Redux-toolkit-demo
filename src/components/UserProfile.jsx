@@ -14,8 +14,8 @@ function UserProfile() {
 
     dispatch(
       updateProfile({
-        name: name,
-        role: role,
+        name: name.trim(),
+        role: role.trim(),
       }),
     );
     setName("");

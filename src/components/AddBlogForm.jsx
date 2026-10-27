@@ -19,9 +19,9 @@ function AddBlogForm() {
     dispatch(
       addBlog({
         id: Date.now(),
-        title: title,
-        category: category,
-        description: description,
+        title: title.trim(),
+        category: category.trim(),
+        description: description.trim(),
         isFeatured: false,
       }),
     );
